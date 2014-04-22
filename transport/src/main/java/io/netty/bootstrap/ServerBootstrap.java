@@ -246,7 +246,8 @@ public final class ServerBootstrap extends AbstractBootstrap<ServerBootstrap, Se
      * ServerBootstrapAcceptor主要的作用是当有client连接上Server的时，pipline触发channelRead
      * 事件，然后会给pipline添加用户自己的handler
      */
-    private static class ServerBootstrapAcceptor extends ChannelInboundHandlerAdapter {
+    private static class
+            ServerBootstrapAcceptor extends ChannelInboundHandlerAdapter {
 
         private final EventLoopGroup childGroup;
         private final ChannelHandler childHandler;
